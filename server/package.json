@@ -22,6 +22,7 @@
     "denque": "^1.4.1",
     "depd": "^1.1.2",
     "destroy": "^1.0.4",
+    "dotenv": "^8.2.0",
     "ee-first": "^1.1.1",
     "encodeurl": "^1.0.2",
     "escape-html": "^1.0.3",
@@ -88,7 +89,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
