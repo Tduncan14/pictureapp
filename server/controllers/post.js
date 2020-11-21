@@ -1,26 +1,28 @@
-const PostMessage = require('../models');
+const PostMessage = require('../models/PostModel');
 
 
-  const getPosts =  aysnc(req,res)  => {
+  const getPosts =  async (req,res )  => {
 
-      try{
+    try{
 
-         const PostMessages = await PostMessage.find();
-         
-          console.log(postMessage);
+      const PostMessages = await PostMessage.find();
+      
+       console.log(postMessage);
 
 
-          res.status(200).json(postMessages)
-          
+       res.status(200).json(postMessages)
+       
 
-      }
+   }
 
-      catch(err){
+   catch(err){
 
-        res.status(404).json('messages not found')
+     res.status(404).json('messages not found')
 
-      }
+   }
 
+
+     
 
 
 
@@ -34,5 +36,3 @@ const PostMessage = require('../models');
 
 
 
-
-module.exports = {getPosts,createPost}
