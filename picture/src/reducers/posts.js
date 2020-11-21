@@ -7,19 +7,13 @@ const reducer = (state = [],action) => {
         case 'Create':
           return state;
         default:
+            return state
              break;
          
 
 
 
-
-
-
-
-
-
     }
-
-
-
 }
+
+export default reducer
