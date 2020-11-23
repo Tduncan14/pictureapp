@@ -5,7 +5,7 @@ const reducer = (state = [],action) => {
         case'FETCH_ALL':
           return action.payload;
         case 'Create':
-          return state;
+          return [...state, action.payload]
         default:
             return state
              break;
