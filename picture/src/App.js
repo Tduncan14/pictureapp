@@ -13,12 +13,16 @@ function App() {
      const dispatch = useDispatch()
 
 
-     useEffect =>(() =>{
+     useEffect(() =>{
 
-         dispatch(getPosts)
+         dispatch(getPosts())
 
 
      },[])
+
+    //  useEffect(() => {
+    //   dispatch(getPosts());
+    // }, [currentId, dispatch]);
 
   return (
     

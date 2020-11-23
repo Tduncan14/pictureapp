@@ -1,11 +1,23 @@
 import React from 'react';
 import Post from './Post/Post';
-import useStyles from './style';
+
+import {useSelector} from 'react-redux';
+
+
+
+// import useStyles from './style.';
 
 
 
 const Posts = () =>{
-    const classes = useStyles();
+
+    const posts = useSelector((state) => state.posts)
+
+       
+    console.log(posts)
+ 
+
+    // const classes = useStyles();
 
 
     return(

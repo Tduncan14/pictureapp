@@ -1,7 +1,6 @@
 const PostMessage = require('../models/PostModel');
 
-
-  const getPosts =  async (req,res )  => {
+const getPosts =  async (req,res )  => {
 
     try{
 
@@ -28,9 +27,9 @@ const PostMessage = require('../models/PostModel');
 
   }
 
- const createPost = async  (req,res) =>{
+const createPost = async  (req,res) =>{
 
-     const post = req.body;
+ const post = req.body;
 
      const newPost = new PostMessage(post)
 
@@ -51,4 +50,5 @@ const PostMessage = require('../models/PostModel');
 
 
 
+ module.exports = { getPosts,createPost}
 
